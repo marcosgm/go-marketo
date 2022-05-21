@@ -1,4 +1,4 @@
-module github.com/polytomic/go-marketo
+module github.com/marcosgm/go-marketo
 
 go 1.15
 

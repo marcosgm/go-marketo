@@ -238,13 +238,13 @@ func (c *Client) doWithRetry(req *http.Request) (response *Response, err error) 
 	}
 
 	// check just in case we received 601 or 602
-	retry, err := c.checkToken(response)
-	if err != nil {
-		return nil, err
-	}
-	if retry {
-		response, err = c.do(req)
-	}
+	// retry, err := c.checkToken(response)
+	// if err != nil {
+	// 	return nil, err
+	// }
+	// if retry {
+	// 	response, err = c.do(req)
+	// }
 
 	return response, err
 }
